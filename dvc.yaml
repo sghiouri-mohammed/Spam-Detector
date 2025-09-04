@@ -1,0 +1,9 @@
+stages:
+  train:
+    cmd: python src/train.py
+    deps:
+      - src/train.py
+      - src/utils.py
+      - data/emails.csv
+    outs:
+      - models/model.pkl

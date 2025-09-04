@@ -1,0 +1,9 @@
+pandas>=2.2
+numpy>=1.26
+scikit-learn>=1.4
+matplotlib>=3.8
+joblib>=1.3
+xgboost>=2.0 # optionnel, seulement si tu veux tester XGB
+pytest>=8.0
+streamlit>=1.35
+dvc>=3.0
