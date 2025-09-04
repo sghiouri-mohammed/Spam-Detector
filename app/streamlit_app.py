@@ -13,6 +13,7 @@ from sklearn.metrics import (
     recall_score,
     f1_score,
 )
+import textwrap
 
 st.set_page_config(page_title="Spam Detector", layout="centered")
 st.title("📧 Spam Detector — Prototype")
@@ -171,3 +172,5 @@ if uploaded is not None:
             st.dataframe(rep_df.style.format({"precision": "{:.3f}", "recall": "{:.3f}", "f1-score": "{:.3f}", "support": "{:.0f}"}))
 
 st.caption(f"Seuil de décision courant: {threshold:.3f}")
+
+st.divider()
